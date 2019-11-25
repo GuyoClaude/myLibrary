@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const Author = require("../models/author");
-const uploadPath = path.join("public", Book.coverImageBasePath);
 const imageMimeTypes = ["image/jpeg", "image/png", "images/gif"];
 
 

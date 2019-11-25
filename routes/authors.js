@@ -36,18 +36,26 @@ router.post("/", async (req, res) => {
       errorMessage: "Error creating Author"
     });
   }
-  //   author.save((error, newAuthor) => {
-  //     if (error) {
-  //       res.render("authors/new", {
-  //         author: author,
-  //         errorMessage: "Error creating Author"
-  //       });
-  //     } else {
-  //       // res.redirect(`authors/${newAuthor.id}`)
-  //       res.redirect(`authors`);
-  //     }
-  //   });
-  //   res.send(req.body.name);
+});
+//Show Author Details
+router.get("/:id", (req, res) => {
+  res.send("Show Author" + req.params.id);
+});
+
+//Edit Author
+router.get("/:id/edit", (req, res) => {
+  res.send("Edit Author" + req.params.id);
+});
+
+//Update Author
+
+router.put("/:id", (req, res) => {
+  res.send("Update Author" + req.params.id);
+});
+
+//Delete Author
+router.delete("/:id", (req, res) => {
+  res.send("Delete Author" + req.params.id);
 });
 
 module.exports = router;
