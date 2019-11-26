@@ -152,7 +152,7 @@ async function renderFormPage(res, book, form, hasError = false) {
         params.errorMessage = "Error Creating Book";
       }
     }
-    res.render(`/books/${form}`, params);
+    res.render(`books/${form}`, params);
   } catch (error) {
     console.log(error);
     
