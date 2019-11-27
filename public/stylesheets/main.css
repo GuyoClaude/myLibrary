@@ -3,6 +3,8 @@
 @import "shared/header.css";
 @import "shared/buttons.css";
 @import "shared/form.css";
+@import "shared/author.css";
+@import "shared/book.css";
 
 :root {
   font-size: 20px;
@@ -34,4 +36,9 @@ body {
 .page-header {
     font-size: 2rem;
     font-weight: 500;
+}
+
+
+.error-message {
+  color: rgb(201, 32, 32);
 }

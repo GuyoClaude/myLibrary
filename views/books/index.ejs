@@ -8,32 +8,28 @@
   </div>
   <div>
     <div class="form-row">
-      <div class="form-item"><label>Published After</label>
+      <div class="form-item">
+        <label>Published After</label>
         <input
           type="date"
           name="publishedAfter"
           value="<%= searchOptions.publishedAfter%>"
-        /></div>
-      <div class="form-item"><label>Published Before</label>
+        />
+      </div>
+      <div class="form-item">
+        <label>Published Before</label>
         <input
           type="date"
           name="publishedBefore"
           value="<%= searchOptions.publishedBefore%>"
-        /></div>
+        />
+      </div>
     </div>
-    
   </div>
-
-  
 
   <button class="btn btn-primary" type="submit">Search</button>
 </form>
 <br />
 <div>
-  <% books.forEach(book => { %>
-  <a href="/books/<%= book.id %>">
-    <img src="<%= book.coverImagePath%>" height="150" width="100" alt="" />
-  </a>
-
-  <% }) %>
+  <%- include('../partials/bookGrid', {books: books, large: true}) %>
 </div>

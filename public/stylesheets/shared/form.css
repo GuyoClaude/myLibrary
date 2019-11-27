@@ -38,34 +38,35 @@
   font-family: "Gotham Rounded";
   outline: none;
 }
-.form-item input:focus, .form-item select:focus,.form-item textarea:focus{
-    border-color: rgb(255, 155, 25);
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus {
+  border-color: rgb(255, 155, 25);
 }
 
-.form-item textarea{
-    height: 100%;
-    resize: none;
+.form-item textarea {
+  height: 100%;
+  resize: none;
 }
 .form-item select option {
-    background-color: rgb(67, 230, 46);
+  background-color: rgb(67, 230, 46);
 }
 
 .filepond--root {
-    font-family: 'Gotham Rounded';
-    margin-bottom: 0;
-    font-size: 12px;
+  font-family: "Gotham Rounded";
+  margin-bottom: 0;
+  font-size: 12px;
 }
 
-.filepond--panel-root{
-    background-color: rgb(84, 95, 250)
-    ;
-    border: 1px solid rgb(233, 233, 233);
+.filepond--panel-root {
+  background-color: rgb(84, 95, 250);
+  border: 1px solid rgb(233, 233, 233);
 }
 
 .filepond--drop-label {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .form-row-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
